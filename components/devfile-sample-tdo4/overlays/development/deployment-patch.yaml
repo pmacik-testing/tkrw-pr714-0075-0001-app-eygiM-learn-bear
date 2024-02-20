@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-tdo4
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0001-tenant/tkrw-pr714-0075-0001-app/devfile-sample-tdo4@sha256:3b48d9b04f81ee8c179bd8875263869210b24795704e95565f4796c5e4c197f9
+        name: my-nodejs
+        resources: {}
+status: {}
